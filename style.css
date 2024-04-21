@@ -9,25 +9,88 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
+}
 
-    > button{
-        height: fit-content;
-        position: absolute;
-        top: 10px;
-        left: 10px;
+button{
+    height: fit-content;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.link-container{
+    border: solid black;
+    margin: auto;
+    width: fit-content;
+}
+
+.slide-iframe{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    border: solid black;
+
+    > iframe{
+        width: 100%;
+        height: 100%;
     }
+}
 
-    > .link-container{
+ol{
+    margin: 0px;
+}
+
+ol > li{
+    margin: 10px 0;
+    list-style: none;
+}
+
+/* DISPOSITIVO MÓVIL HORIZONTAL */
+
+@media only screen and (max-width: 922px){
+    button{
+        display: none;
+    }
+    
+    .link-container{
         border: solid black;
         margin: auto;
         width: fit-content;
+        font-size: 20px;
     }
-
-    > .slide-iframe{
+    
+    .slide-iframe{
         width: 90%;
         height: 80%;
+        border: solid red;
         margin: auto;
+        > iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* DISPOSITIVO MÓVIL VERTICAL */
+
+@media (orientation: portrait){
+    button{
+        display: none;
+    }
+
+    /* HOME! */
+    .link-container{
         border: solid black;
+        margin: auto;
+        width: fit-content;
+        font-size: 13px;
+    }
+    
+    .slide-iframe{
+        width: 100%;
+        height: 50%;
+        border: solid red;
+        margin: auto;
 
         > iframe{
             width: 100%;
@@ -36,14 +99,3 @@ body{
     }
 }
 
-ol > li{
-    margin: 10px 10px 0;
-    list-style: none;
-}
-
-/* @media (min-width: 400px), screen and (orientation: portrait){
-    #slide-iframe{
-        width: 100vw;
-        height: 50vh;
-    }
-} */
