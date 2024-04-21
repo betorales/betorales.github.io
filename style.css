@@ -19,7 +19,7 @@ button{
 }
 
 .link-container{
-    border: solid black;
+    /* border: solid black; */
     margin: auto;
     width: fit-content;
 }
@@ -42,7 +42,7 @@ ol{
 
 ol > li{
     margin: 10px 0;
-    list-style: none;
+    /* list-style: none; */
 }
 
 /* DISPOSITIVO MÓVIL HORIZONTAL */
@@ -53,15 +53,15 @@ ol > li{
     }
     
     .link-container{
-        border: solid black;
+        /* border: solid black; */
         margin: auto;
         width: fit-content;
-        font-size: 20px;
+        font-size: 13px;
     }
     
     .slide-iframe{
         width: 90%;
-        height: 80%;
+        height: 60%;
         border: solid red;
         margin: auto;
         > iframe{
@@ -80,7 +80,7 @@ ol > li{
 
     /* HOME! */
     .link-container{
-        border: solid black;
+        /* border: solid black; */
         margin: auto;
         width: fit-content;
         font-size: 13px;
