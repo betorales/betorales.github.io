@@ -1,0 +1,67 @@
+*{
+    color: inherit;
+}
+
+/* section{
+    border: 2px dotted blue;
+} */
+
+.main-container{
+    color: orange;
+    margin: auto;
+    border: solid blue;
+    width: fit-content;
+}
+
+.grid-style{
+    display: grid;
+    grid-template-columns: 24.5rem 1fr;
+    gap: 1rem;
+    place-items: center;
+    padding: 0 10px;
+    > div{
+        > img{
+            aspect-ratio: 4/1; 
+            height: 200px;
+        }
+    };
+}
+
+table tr td img{
+    aspect-ratio: 16/3;
+    height: 6em;
+    border: solid orange;
+}
+
+table tr td{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 600px){
+    .grid-style{
+        display: flex;
+        flex-direction: column;
+        
+        > div:first-child{
+            margin: 0 0 1.5rem 0;
+            > img{
+                height: 300px;
+            }
+        }
+    }
+}
+
+.logo-div{
+    height: 6rem;
+    aspect-ratio: 16/9;
+    background-image: url('/assets/images/LOGO-EDITABLE-GRIS.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 400px){
+    .logo-div{
+        margin: 0 auto;
+    }
+}
