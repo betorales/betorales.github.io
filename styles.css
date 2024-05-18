@@ -1,16 +1,51 @@
-*{
-    color: inherit;
+:root{
+    --primary-color: orange;
+    --font-family: system-ui
 }
 
-/* section{
-    border: 2px dotted blue;
+h1, h2, h3, h4, h5, h6{
+    color: var(--primary-color) !important
+}
+
+.anchor-tags{
+    color: inherit;
+    font-size: 2rem;
+    padding: 2px;
+    font-family: var(--font-family);
+}
+
+.anchor-tags:hover{
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.anchor-tags:visited::after{
+    content: url('/assets/icons/check-circle.svg'); 
+} 
+
+/* .svg::after{
+    content: url('/assets/icons/check-circle.svg');
+    fill: green;
 } */
 
 .main-container{
-    color: orange;
+    color: var(--primary-color);
     margin: auto;
-    border: solid blue;
+    /* border: solid blue; */
     width: fit-content;
+    text-align: center;
+    padding: 0 10%;
+    box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    >h1{
+        font-size: 3rem;
+        font-family: var(--font-family);
+    }
+    > ul li{
+        margin: 20px 0;
+        text-align: start;
+    }
 }
 
 .grid-style{
@@ -63,5 +98,9 @@ table tr td{
 @media (max-width: 400px){
     .logo-div{
         margin: 0 auto;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 5rem;
     }
 }
