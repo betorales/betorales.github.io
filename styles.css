@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+.links-papers{
+    font-size: 1rem;
+}
+
 .grid-style{
     display: grid;
     grid-template-columns: 24.5rem 1fr;
