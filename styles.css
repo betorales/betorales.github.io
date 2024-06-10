@@ -118,7 +118,38 @@ table tr td{
     margin: 0;
 }
 
+.side-by-side{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    font-size: 1rem;
+    place-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    >div{
+        border: solid black;
+        width: fit-content;
+    }
+}
+
+.references{
+    font-size: 0.4rem; 
+    /* border: solid black;  */
+    text-align: right;
+    width: 450px;
+
+    > p{
+        margin: 0;
+        padding: 3px 0;
+    }
+}
+
 @media (max-width: 600px){
+
+    .side-by-side{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
 
     .grid-style{
         display: flex;
