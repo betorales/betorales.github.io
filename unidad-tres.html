@@ -161,26 +161,5 @@
             touch: true,
         })
     </script>
-    <script>
-        // Restore presentation state from local storage
-        Reveal.addEventListener('ready', function (event) {
-            var index = parseInt(localStorage.getItem('revealIndex'));
-            var hIndex = parseInt(localStorage.getItem('revealHIndex'));
-            var vIndex = parseInt(localStorage.getItem('revealVIndex'));
-            var fIndex = parseInt(localStorage.getItem('revealFIndex'));
-
-            if (!isNaN(index)) {
-                Reveal.slide(index, hIndex, vIndex, fIndex);
-            }
-        });
-
-        // Save presentation state to local storage on slide change
-        Reveal.addEventListener('slidechanged', function (event) {
-            localStorage.setItem('revealIndex', event.indexh);
-            localStorage.setItem('revealHIndex', event.indexh);
-            localStorage.setItem('revealVIndex', event.indexv);
-            localStorage.setItem('revealFIndex', event.indexf);
-        });
-    </script>
 </body>
 </html>
